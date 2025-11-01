@@ -1,5 +1,7 @@
 
 // Enhanced encryption handling
+
+// Enhanced encryption handling
 // FHEVM SDK utilities for frontend
 import { ethers } from "ethers";
 import { JsonRpcProvider } from "ethers";
