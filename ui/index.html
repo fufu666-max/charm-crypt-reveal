@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charm Crypt Reveal - Privacy-Preserving Rock Paper Scissors</title>
+    <meta name="description" content="Play rock paper scissors with fully encrypted choices. Your selection remains private until the game completes." />
+    <meta name="author" content="Charm Crypt Reveal" />
+    
+    <!-- Load Zama Relayer SDK UMD bundle before the app -->
+    <!-- This sets up window.relayerSDK which is required by @zama-fhe/relayer-sdk/bundle -->
+    <script src="https://cdn.zama.ai/relayer-sdk-js/0.2.0/relayer-sdk-js.umd.cjs" type="text/javascript"></script>
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Charm Crypt Reveal - Privacy-Preserving Rock Paper Scissors" />
+    <meta property="og:description" content="Play rock paper scissors with fully encrypted choices. Your selection remains private until the game completes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MysticRaffle" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

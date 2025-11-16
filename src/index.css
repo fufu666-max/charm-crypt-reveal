@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 280 40% 6%;
+    --foreground: 40 20% 92%;
+
+    --card: 280 35% 10%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 280 35% 10%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 280 60% 50%;
+    --primary-foreground: 40 90% 95%;
+
+    --secondary: 40 70% 55%;
+    --secondary-foreground: 280 40% 10%;
+
+    --muted: 280 30% 20%;
+    --muted-foreground: 40 15% 65%;
+
+    --accent: 180 80% 50%;
+    --accent-foreground: 280 40% 10%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 90% 95%;
+
+    --border: 280 40% 20%;
+    --input: 280 40% 20%;
+    --ring: 280 60% 50%;
+
+    --radius: 0.75rem;
+
+    --mystical-glow: 280 80% 60%;
+    --parchment: 40 45% 75%;
+    --crystal: 180 100% 70%;
+    --amber: 40 85% 60%;
+    --deep-purple: 280 60% 25%;
+
+    --sidebar-background: 280 35% 10%;
+    --sidebar-foreground: 40 20% 92%;
+    --sidebar-primary: 280 60% 50%;
+    --sidebar-primary-foreground: 40 90% 95%;
+    --sidebar-accent: 280 30% 20%;
+    --sidebar-accent-foreground: 40 20% 92%;
+    --sidebar-border: 280 40% 20%;
+    --sidebar-ring: 280 60% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: 
+      radial-gradient(at 20% 30%, hsl(var(--mystical-glow) / 0.15) 0px, transparent 50%),
+      radial-gradient(at 80% 70%, hsl(var(--accent) / 0.1) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--mystical-glow) / 0.5), 0 0 40px hsl(var(--mystical-glow) / 0.3);
+  }
+
+  .crystal-glow {
+    box-shadow: 0 0 20px hsl(var(--crystal) / 0.4), 0 0 40px hsl(var(--crystal) / 0.2), inset 0 0 20px hsl(var(--crystal) / 0.1);
+  }
+
+  .parchment-texture {
+    background-color: hsl(var(--parchment) / 0.05);
+    background-image: 
+      repeating-linear-gradient(90deg, hsl(var(--amber) / 0.03) 0px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(0deg, hsl(var(--amber) / 0.03) 0px, transparent 2px, transparent 4px);
+  }
+
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--mystical-glow) / 0.4), 0 0 40px hsl(var(--mystical-glow) / 0.2);
+    }
+    50% { 
+      box-shadow: 0 0 30px hsl(var(--mystical-glow) / 0.6), 0 0 60px hsl(var(--mystical-glow) / 0.3);
+    }
+  }
+}

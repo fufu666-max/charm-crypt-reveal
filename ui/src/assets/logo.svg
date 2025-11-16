@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="30" fill="#6366f1" opacity="0.2"/>
+  <circle cx="32" cy="32" r="30" stroke="#6366f1" stroke-width="2"/>
+  <g transform="translate(32, 32)">
+    <!-- Rock (Hand) -->
+    <path d="M-12,-8 L-8,-12 L-4,-8 L-4,4 L-8,8 L-12,4 Z" fill="#8b5cf6" opacity="0.8"/>
+    <!-- Scissors -->
+    <path d="M0,-12 L2,-10 L0,-8 L-2,-10 Z M0,-12 L-2,-10 L0,-8 L2,-10 Z" fill="#ec4899" opacity="0.8"/>
+    <!-- Paper -->
+    <rect x="8" y="-12" width="8" height="16" rx="1" fill="#10b981" opacity="0.8"/>
+  </g>
+  <circle cx="32" cy="32" r="4" fill="#6366f1"/>
+</svg>
+

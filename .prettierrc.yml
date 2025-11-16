@@ -2,6 +2,7 @@ plugins:
   - "prettier-plugin-solidity"
 printWidth: 120
 trailingComma: "all"
+endOfLine: "lf"
 
 overrides:
   - files: "*.md"
@@ -10,12 +11,5 @@ overrides:
   - files: "*.sol"
     options:
       compiler: "0.8.24"
-      parser: "solidity-parse"
+      parser: "slang"
       tabWidth: 4
-  - files: "*.ts"
-    options:
-      importOrder: ["<THIRD_PARTY_MODULES>", "^[./]"]
-      importOrderParserPlugins: ["typescript"]
-      importOrderSeparation: true
-      importOrderSortSpecifiers: true
-      parser: "typescript"

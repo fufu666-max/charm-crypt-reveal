@@ -14,18 +14,18 @@ A fully encrypted rock-paper-scissors game built with FHEVM (Fully Homomorphic E
 ```
 charm-crypt-reveal/
 ├── contracts/
-�?  └── RockPaperScissors.sol    # Main game contract
+�?  └── RockPaperScissors.sol    # Main game contract
 ├── test/
-�?  ├── RockPaperScissors.ts      # Local network tests
-�?  └── RockPaperScissorsSepolia.ts # Sepolia testnet tests
+�?  ├── RockPaperScissors.ts      # Local network tests
+�?  └── RockPaperScissorsSepolia.ts # Sepolia testnet tests
 ├── tasks/
-�?  └── RockPaperScissors.ts      # Hardhat tasks for interaction
+�?  └── RockPaperScissors.ts      # Hardhat tasks for interaction
 ├── ui/
-�?  └── src/
-�?      ├── components/
-�?      �?  └── RockPaperScissorsGame.tsx  # Game UI component
-�?      └── lib/
-�?          └── fhevm.ts          # FHEVM integration utilities
+�?  └── src/
+�?      ├── components/
+�?      �?  └── RockPaperScissorsGame.tsx  # Game UI component
+�?      └── lib/
+�?          └── fhevm.ts          # FHEVM integration utilities
 └── deploy/
     └── deploy.ts                 # Deployment script
 ```
